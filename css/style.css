@@ -52,6 +52,7 @@ li {
 .nav__item {
     margin-left: 5%;
     margin-right: 5%;
+    width: 200px;
 }
 
 .item__link{
