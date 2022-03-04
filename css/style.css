@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper { 
+    width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    width: 100vw;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 30px;
+}
+
+.logo {
+    min-width: 20%;
+}
+
+.logo-text {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60%;
+}
+
+.nav__item {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.item__link{
+    letter-spacing: 3px; 
+    color: rgb(87, 87, 87);
+}
+
+.header-content {
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    flex-wrap: wrap;
+}
+
+.gif {
+    max-width: 378px;
+    max-height: 378px;
+    border-radius: 10px;
+}
+
+.present-text {
+    margin-left: 30px;
+}
+
+.main-text {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.sub-text {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+.tg-contact {
+    background-color: rgb(125, 216, 216);
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+.content {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#what {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-gallery {
+    display: flex;
+}
+
+.what-text {
+    margin-left: 30px;
+}
+
+.gallery-item {
+    width: 250px;
+    padding: 2.5px;
+    border-radius: 10px;
+}
+
+#variations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.variations-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.variations-list-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.variations-item {
+    display: flex;
+    margin-top: 2vh;
+}
+
+.main-text-min {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.sub-text-min {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+}
+
+.prewiew {
+    border-radius: 10px;
+}
+
+@media (max-width: 1265px){
+    #what {
+        flex-direction: column;
+        margin-top: 50vh;
+    }
+}
+
+@media (max-width: 1024px){
+    .item__link {
+        width: 200px;
+    }
+}
+
+@media (max-height: 600px){
+    .header {
+        width: 140vh;
+    }
+
+    #what {
+        margin-top: 50vh;
+    }
+}
+
+@media (max-width: 970px) {
+    .nav-list {
+        margin-top: 10%;
+        width: 100vw;
+    }
+
+    .what-text {
+        max-width: 310px;
+    }
+
+    .item__link {
+        letter-spacing: none;
+    }
+
+    .gif {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .header-content {
+        margin-top: 7%;
+    }
+
+    .present-text {
+        margin-top: 7%;
+    }
+
+    .gallery-item {
+        width: 150px;
+    }
+
+    .gallery {
+        margin-top: 15vh;
+        margin-bottom: 2vh;
+    }
+
+    .variations-item {
+        margin-top: 5vh;
+    }
+
+    #variations {
+        margin-top: 50vh;
+    }
+
+    .variations-list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 590px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav__item {
+        margin-top: 20px;
+    }
+}
