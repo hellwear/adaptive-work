@@ -33,6 +33,38 @@ li {
     padding-top: 30px;
 }
 
+.header__burger {
+    width: 30px;
+    height: 22px;
+    display: none;
+    align-items: center;
+    margin-right: 18px;
+}
+
+.header__burger-el {
+    height: 2px;
+    width: 100%;
+    background-color: #21243D;
+    position: relative;
+}
+
+.header__burger-el::before,
+.header__burger-el::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #21243D;
+    position: absolute;
+}
+
+.header__burger-el::before {
+    top: -8px;
+}
+
+.header__burger-el::after {
+    top: 8px;
+}
+
 .logo {
     min-width: 20%;
 }
@@ -201,9 +233,21 @@ li {
     }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1072px){
     .item__link {
         width: 200px;
+    }
+
+    .header {
+        padding-top: 20px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .header__burger {
+        display: flex;
     }
 }
 
@@ -274,4 +318,16 @@ li {
     .nav__item {
         margin-top: 20px;
     }
+}
+
+#road-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.road-map-point-item {
+    margin-top: 2vh;
 }
